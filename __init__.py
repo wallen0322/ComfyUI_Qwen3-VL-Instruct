@@ -1,7 +1,9 @@
 from .nodes import Qwen3_VQA
 from .util_nodes import ImageLoader, VideoLoader
-from .path_nodes import MultiplePathsInput
+from .path_nodes import MultiplePathsInput, LoadMediaFromFolder 
+
 WEB_DIRECTORY = "./web"
+
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
 NODE_CLASS_MAPPINGS = {
@@ -9,6 +11,7 @@ NODE_CLASS_MAPPINGS = {
     "ImageLoader": ImageLoader,
     "VideoLoader": VideoLoader,
     "MultiplePathsInput": MultiplePathsInput,
+    "LoadMediaFromFolder": LoadMediaFromFolder, 
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
@@ -17,4 +20,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ImageLoader": "Load Image Advanced",
     "VideoLoader": "Load Video Advanced",
     "MultiplePathsInput": "Multiple Paths Input",
+    "LoadMediaFromFolder": "Load Media From Folder", 
 }
